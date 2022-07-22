@@ -4,7 +4,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
 const EventPopup = ({ opened }) => {
 
-    let [isOpen, setIsOpen] = useState(false)
+    let [isOpen, setIsOpen] = useState(true)
 
     function closeModal() {
         setIsOpen(false)

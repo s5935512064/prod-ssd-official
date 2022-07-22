@@ -2,12 +2,23 @@ import Navbar from "../components/Navbar";
 import React, { useState, useEffect, useRef } from "react";
 import { Link, animateScroll as scroll, scroller } from 'react-scroll'
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const Privacy = () => {
     const router = useRouter();
     const { locale } = router;
     return (
         <>
+
+
+
+
+            <Head>
+                <title>นโยบายความเป็นส่วนตัว - บริษัท สยามสินธร จำกัด</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <link rel="icon" href="/assets/logo-TREE.svg" />
+            </Head>
+
             < Navbar />
 
             <div className="w-full h-full relative flex justify-center pt-28">
@@ -264,15 +275,14 @@ const Privacy = () => {
 
                             {locale === "en" ? "Siam Sindhorn Co., Ltd. and its group companies including (without limitation) Sindhorn Kempin Co., Ltd.,  Sindhorn Maa-Lai Co., Ltd.,  Sindhorn Co., Ltd.,  Superior Cleaning Services Co., Ltd.,  Sindhorn Food Market Co., Ltd.,  Sindhorn Saneh Jaan Co., Ltd.,  Eiffel Cafe Co., Ltd.,  Sindhorn Management Co., Ltd.,  Sindhorn Residence Co., Ltd.,  Boriharnsubsin Co., Ltd.,  Siamsindhorn Land Co., Ltd., " : "บริษัท สยามสินธร จำกัด และบริษัทในเครือ ซึ่งรวมถึง (แต่ไม่จำกัดเพียง) บริษัท สินธร เคมปิน จำกัด บริษัท สินธร มาลัย จำกัด บริษัท สินธร จำกัด บริษัท ซูพีเรีย คลีนนิ่ง เซอร์วิสเซส จำกัด บริษัท สินธร ฟู้ด มาร์เก็ต จำกัด บริษัท สินธร เสน่ห์จันทน์ จำกัด บริษัท ไอเฟล คาเฟ่ จำกัด บริษัท สินธร แมเนจเมนท์ จำกัด บริษัท สินธร เรสซิเดนซ์ จำกัด บริษัท บริหารทรัพย์สิน จำกัด บริษัท สยามสินธร แลนด์ จำกัด "}
 
-
-                            ({locale === "en" ? "collectively," : ""}
+                            ({locale === "en" ? "collectively, " : ""}
                             &quot;{locale === "en" ? "Company" : "บริษัท"}&quot;)
-                            {locale === "en" ? " recognize the importance of protecting the personal data.  Therefore, Company has developed this “Privacy Notice” that covers how Company collects, uses, and discloses your personal data including how Company appropriately manages and secures the personal data. This Privacy Notice will apply to any persons who contact with the Company or those whose personal data is held by the Company which collected through both online and offline channels such as on-site visiting, browsing Company's websites, communicating on any applications, social media, or Company's employee.  Company would like to thank you for your trust and please be assured that Company commits to treat all personal data with security and confidentiality in order to provide the best service for you." : " ได้ตระหนักถึงความสำคัญของการปกป้องข้อมูลส่วนบุคคล โดยบริษัทได้จัดให้มี “นโยบายความเป็นส่วนตัว” เพื่อให้ท่านได้ทราบถึงนโยบายของบริษัทเกี่ยวกับการเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคล และวิธีการจัดการ รวมถึงมาตรการรักษาความปลอดภัยของข้อมูลส่วนบุคคลอย่างเหมาะสม ซึ่งนโยบายความเป็นส่วนตัวนี้จะนำไปใช้กับทุกท่านที่มีความเกี่ยวข้องกับบริษัทหรือท่านที่บริษัทครอบครองข้อมูลส่วนบุคคลอยู่ ไม่ว่าจะเป็นข้อมูลส่วนบุคคลที่ท่านได้ให้ไว้ผ่านช่องทางของบริษัท ทั้ง Offline และ Online เช่น การเยี่ยมชมโครงการ การเข้าเว็บไซต์ต่างๆ ของบริษัทและโครงการต่างๆของบริษัท แอปพลิเคชัน โซเชียลมีเดีย หรือผ่านตัวบุคคล เป็นต้น บริษัทขอขอบคุณที่ท่านให้ความไว้วางใจ และขอให้ท่านมั่นใจได้ว่า บริษัทจะดูแลข้อมูลส่วนบุคคลของท่านด้วยความระมัดระวังและอย่างเหมาะสม เพื่อมอบการบริการอย่างดีที่สุดสำหรับท่าน"}
+                            {locale === "en" ? " recognize the importance of protecting the personal data.  Therefore, Company has developed this \"Privacy Notice\" that covers how Company collects, uses, and discloses your personal data including how Company appropriately manages and secures the personal data. This Privacy Notice will apply to any persons who contact with the Company or those whose personal data is held by the Company which collected through both online and offline channels such as on-site visiting, browsing Company\'s websites, communicating on any applications, social media, or Company\'s employee.  Company would like to thank you for your trust and please be assured that Company commits to treat all personal data with security and confidentiality in order to provide the best service for you." : " ได้ตระหนักถึงความสำคัญของการปกป้องข้อมูลส่วนบุคคล โดยบริษัทได้จัดให้มี \"นโยบายความเป็นส่วนตัว\" เพื่อให้ท่านได้ทราบถึงนโยบายของบริษัทเกี่ยวกับการเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคล และวิธีการจัดการ รวมถึงมาตรการรักษาความปลอดภัยของข้อมูลส่วนบุคคลอย่างเหมาะสม ซึ่งนโยบายความเป็นส่วนตัวนี้จะนำไปใช้กับทุกท่านที่มีความเกี่ยวข้องกับบริษัทหรือท่านที่บริษัทครอบครองข้อมูลส่วนบุคคลอยู่ ไม่ว่าจะเป็นข้อมูลส่วนบุคคลที่ท่านได้ให้ไว้ผ่านช่องทางของบริษัท ทั้ง Online และ Offline เช่น การเยี่ยมชมโครงการ การเข้าเว็บไซต์ต่างๆ ของบริษัทและโครงการต่างๆ ของบริษัท แอปพลิเคชัน โซเชียลมีเดีย หรือผ่านตัวบุคคล เป็นต้น บริษัทขอขอบคุณที่ท่านให้ความไว้วางใจ และขอให้ท่านมั่นใจได้ว่า บริษัทจะดูแลข้อมูลส่วนบุคคลของท่านด้วยมาตรการที่มีความปลอดภัยและเป็นความลับ เพื่อมอบการบริการอย่างดีที่สุดสำหรับท่าน"}
                         </p>
                         <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
                             {locale === "en" ? "This Privacy Notice applies to the website " : "นโยบายความเป็นส่วนตัวนี้ ครอบคลุมถึงเว็บไซต์ "}<a href="https://siamsindhorn.com" target="_blank" rel="noopener noreferrer" className="text-[#82603f]">https://siamsindhorn.com</a>
 
-                            {locale === "en" ? "and other websites owned or operated by Company  and its group companies including any applications, social media, online messaging services, membership points, marketing campaign, and any other activities that collect your personal data.  However, please read this Privacy Notice in conjunction with the terms and conditions of the particular service that you use including the Privacy Policy that may be notified and published on Company's website or at the time that Company collects your personal data.  Therefore, the Company would like to inform you about our Privacy Notice as follows." : " และเว็บไซต์ต่าง ๆ ของบริษัทและโครงการในเครือ รวมถึงแอปพลิเคชัน ช่องทางสื่อสังคมออนไลน์ ช่องทางการสื่อสารออนไลน์ บริการแลกเปลี่ยนคะแนนสะสมและบัตรสมาชิก กิจกรรม ตลอดจนสถานที่อื่นๆ ที่มีการเก็บรวมรวมข้อมูลส่วนบุคคลของท่าน ทั้งนี้ กรุณาอ่านนโยบายความเป็นส่วนตัวนี้ควบคู่กับข้อตกลงและเงื่อนไขสำหรับการใช้บริการที่ท่านใช้ รวมถึงนโยบายคุ้มครองข้อมูลส่วนบุคคลที่บริษัทอาจจะแจ้งเพิ่มเติมบนเว็บไซต์ของบริษัท หรือ ณ เวลาที่บริษัทได้รวบรวมข้อมูลของท่าน และเพื่อให้ท่านได้ทราบ บริษัทขอแจ้งนโยบายความเป็นส่วนตัว ดังนี้"}
+                            {locale === "en" ? "and other websites owned or operated by Company  and its group companies including any applications, social media, online messaging services, membership points, marketing campaign, and any other activities that collect your personal data.  However, please read this Privacy Notice in conjunction with the terms and conditions of the particular service that you use including the Privacy Policy that may be notified and published on Company\'s website or at the time that Company collects your personal data.  Therefore, the Company would like to inform you about our Privacy Notice as follows:" : " และเว็บไซต์ต่างๆ ที่บริษัทเป็นเจ้าของหรือเป็นผู้ดำเนินการ  และโครงการในเครือ รวมถึงแอปพลิเคชัน ช่องทางสื่อสังคมออนไลน์ ช่องทางการสื่อสารออนไลน์ บริการแลกเปลี่ยนคะแนนสะสมและบัตรสมาชิก ตลอดจนกิจกรรมอื่นๆ ที่มีการเก็บรวมรวมข้อมูลส่วนบุคคลของท่าน ทั้งนี้ กรุณาอ่านนโยบายความเป็นส่วนตัวนี้ควบคู่กับข้อตกลงและเงื่อนไขสำหรับการใช้บริการที่ท่านใช้ รวมถึงนโยบายคุ้มครองข้อมูลส่วนบุคคลที่บริษัทอาจจะแจ้งเพิ่มเติมบนเว็บไซต์ของบริษัท หรือ ณ เวลาที่บริษัทได้รวบรวมข้อมูลของท่าน และเพื่อให้ท่านได้ทราบ บริษัทขอแจ้งนโยบายความเป็นส่วนตัว ดังนี้"}
 
                         </p>
 
@@ -291,11 +301,11 @@ const Privacy = () => {
                             <ul className="ml-5 list-outside font-light text-sm sm:text-base  mb-2">
                                 <li> <span className="w-10 table-cell">1.1</span><span className="table-cell">
 
-                                    {locale === "en" ? "General Personal Data such as name, address, email, and identification number." : "ข้อมูลส่วนบุคคล เช่น ชื่อ นามสกุล ที่อยู่ Email หมายเลขบัตรประจำตัวประชาชน เป็นต้น"}
+                                    {locale === "en" ? "General Personal Data such as name, last name, address, email, and identification number." : "ข้อมูลส่วนบุคคล เช่น ชื่อ นามสกุล ที่อยู่ Email หมายเลขบัตรประจำตัวประชาชน เป็นต้น"}
                                 </span></li>
                                 <li> <span className="w-10 table-cell">1.2</span><span className="table-cell">
 
-                                    {locale === "en" ? "Sensitive Personal Data which are personal data that requires additional protection such as race, ethnicity, political opinions, health data, disability, labor union information, religion, genetic information, and facial recognition." : "ข้อมูลส่วนบุคคลที่อ่อนไหว เช่น ข้อมูลที่ต้องได้รับการคุ้มครองเป็นพิเศษ ได้แก่ ข้อมูลส่วนบุคคลเกี่ยวกับเชื้อชาติ ความคิดเห็นทางการเมือง เผ่าพันธุ์ ข้อมูลสุขภาพ ความพิการ ข้อมูลสหภาพแรงงาน ศาสนา ข้อมูลพันธุกรรม และข้อมูลการจดจำใบหน้า เป็นต้น"}
+                                    {locale === "en" ? "Sensitive Personal Data which are personal data that requires additional protection such as race, ethnicity, political opinions, health data, disability, labor union information, religion, genetic information, and facial recognition." : "ข้อมูลส่วนบุคคลที่อ่อนไหว ได้แก่ ข้อมูลที่ต้องได้รับการคุ้มครองเป็นพิเศษ เช่น ข้อมูลส่วนบุคคลเกี่ยวกับเชื้อชาติ ชาติพันธุ์ ความคิดเห็นทางการเมือง ข้อมูลสุขภาพ ความพิการ ข้อมูลสหภาพแรงงาน ศาสนา ข้อมูลพันธุกรรม และข้อมูลการจดจำใบหน้า เป็นต้น"}
                                 </span></li>
 
                             </ul>
@@ -309,14 +319,14 @@ const Privacy = () => {
 
                             <p className=" break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2"> <span className="font-normal">&quot;Log&quot; </span>
 
-                                {locale === "en" ? "means a record of communication of any computer system; showing an origin, beginning, destination, routing, date, time, volume, period of time, type of services, or any other mean related to the use of computer, website, or application." : "หมายถึง ข้อมูลที่เกี่ยวกับการติดต่อสื่อสารของระบบคอมพิวเตอร์ แสดงถึงแหล่งกำเนิด ต้นทาง ปลายทาง เส้นทาง วันที่ เวลา ปริมาณ ระยะเวลา ชนิดของบริการ หรืออื่นๆ ที่เกี่ยวข้องกับการใช้งานของระบบคอมพิวเตอร์ เว็บไซต์ หรือแอปพลิเคชัน"}
+                                {locale === "en" ? "means a record of communication of any computer system; showing an origin, beginning, destination, routing, date, time, volume, period of time, type of services, or any other mean related to the use of computer, website, or application. " : "หมายถึง ข้อมูลที่เกี่ยวกับการติดต่อสื่อสารของระบบคอมพิวเตอร์ แสดงถึงแหล่งกำเนิด ต้นทาง ปลายทาง เส้นทาง วันที่ เวลา ปริมาณ ระยะเวลา ชนิดของบริการ หรืออื่นๆ ที่เกี่ยวข้องกับการใช้งานของระบบคอมพิวเตอร์ เว็บไซต์ หรือแอปพลิเคชัน"}
                             </p>
                         </section>
 
 
                         <section id="unit2">
                             <h1 className="text-lg  mb-2">
-                                {locale === "en" ? "2.	Collection of Personal Data" : "2. ข้อมูลส่วนบุคคลประเภทใดบ้างที่บริษัทเก็บรวบรวม"}
+                                {locale === "en" ? "2. Type of Personal Data" : "2. ข้อมูลส่วนบุคคลประเภทใดบ้างที่บริษัทเก็บรวบรวม"}
 
                             </h1>
                             <ul className="ml-5 list-outside font-light text-sm sm:text-base  mb-2">
@@ -330,7 +340,7 @@ const Privacy = () => {
                                     {locale === "en" ? "Identity Data:" : "ข้อมูลส่วนตัว"}
                                 </span>
 
-                                        {locale === "en" ? " such as name; last name; gender; age; date of birth; marital status; address; occupational; office address; zip code; email; details on government-issued identification card; identification number; passport number; photo; credit card information/financial information; salary wages; vehicle and license plate data; and any other identity data that you provided to Company." : " เช่น ชื่อ นามสกุล เพศ อายุ วันเกิด สถานภาพทางการสมรส สถานที่พำนัก อาชีพ ตำแหน่งงาน สถานที่ทำงาน รหัสไปรษณีย์ อีเมล ข้อมูลบนบัตรที่ออกให้โดยรัฐ เช่น เลขบัตรประจำตัวประชาชน เลขหนังสือเดินทาง รูปถ่าย ข้อมูลบัตรเครดิต/ข้อมูลทางธนาคาร รายได้ส่วนบุคคล ข้อมูลยานพาหนะ ข้อมูลป้ายทะเบียน และข้อมูลส่วนตัวอื่นๆ ที่ท่านได้มอบให้แก่บริษัท เป็นต้น"}
+                                        {locale === "en" ? " such as name; last name; gender; age; date of birth; marital status; address; occupational; office address; zip code; email; details on government-issued identification card such as identification number; passport number; photo; credit card information/financial information; salary wages; vehicle and license plate data; and any other identity data that you provided to Company." : " เช่น ชื่อ นามสกุล เพศ อายุ วันเกิด สถานภาพทางการสมรส สถานที่พำนัก อาชีพ ตำแหน่งงาน สถานที่ทำงาน รหัสไปรษณีย์ อีเมล ข้อมูลบนบัตรที่ออกให้โดยรัฐ เช่น เลขบัตรประจำตัวประชาชน เลขหนังสือเดินทาง รูปถ่าย ข้อมูลบัตรเครดิต/ข้อมูลทางธนาคาร รายได้ส่วนบุคคล ข้อมูลยานพาหนะ ข้อมูลป้ายทะเบียน และข้อมูลส่วนตัวอื่นๆ ที่ท่านได้มอบให้แก่บริษัท เป็นต้น"}
                                     </span></li>
 
                                 <li> <span className="w-10 table-cell">
@@ -338,7 +348,7 @@ const Privacy = () => {
                                 </span><span className="table-cell"><span className="font-normal break-all">
                                     {locale === "en" ? "Contact Details:" : "ข้อมูลเพื่อการติดต่อ"}
                                 </span>
-                                        {locale === "en" ? " such as phone number; postal address; email address; Line ID; Facebook, WhatsApp, WeChat and Instagram account and any other details with the similar nature; and other contact details." : " เช่น หมายเลขโทรศัพท์ ที่อยู่ทางไปรษณีย์ อีเมล (e-mail address) ไลน์ไอดี (Line ID) WhatsApp WeChat บัญชีผู้ใช้ Facebook และ Instagram หรือแอปพลิเคชันส่งข้อความอื่นใดในลักษณะเดียวกัน และข้อมูลเพื่อการติดต่ออื่นๆ เป็นต้น"}
+                                        {locale === "en" ? " such as phone number; postal address; email address; Line ID; WhatsApp; WeChat; Facebook; and Instagram account or any other details with the similar nature; and other contact details." : " เช่น หมายเลขโทรศัพท์ ที่อยู่ทางไปรษณีย์ อีเมล (e-mail address) ไลน์ไอดี (Line ID) WhatsApp WeChat บัญชีผู้ใช้ Facebook และ Instagram หรือแอปพลิเคชันส่งข้อความอื่นใดในลักษณะเดียวกัน และข้อมูลเพื่อการติดต่ออื่นๆ เป็นต้น"}
                                     </span></li>
 
                                 <li> <span className="w-10 table-cell">
@@ -364,7 +374,7 @@ const Privacy = () => {
                                     {locale === "en" ? "Feedback Data Provided to Company by You:" : "ข้อเสนอแนะที่ท่านให้กับบริษัท"}
                                 </span>
 
-                                        {locale === "en" ? " such as data provided through the questionnaire; data collected through conversations or surveys; data provided in order to join promotional campaigns; exhibitions or any other activities related to Company's business." : " เช่น ข้อมูลในการกรอกแบบฟอร์ม หรือข้อมูลจากการตอบคำถามระหว่างการสนทนา หรือในการทำแบบสำรวจ หรือข้อมูลเพื่อเข้าร่วมโปรโมชั่น งานแสดงสินค้า หรือกิจกรรมใดๆ ที่เกี่ยวข้องกับธุรกิจของบริษัท เป็นต้น"}
+                                        {locale === "en" ? " such as data provided through the questionnaire; data collected through conversations or surveys; data provided in order to join promotional campaigns; exhibitions or any other activities related to Company\'s business." : " เช่น ข้อมูลในการกรอกแบบฟอร์ม หรือข้อมูลจากการตอบคำถามระหว่างการสนทนา หรือในการทำแบบสำรวจ หรือข้อมูลเพื่อเข้าร่วมโปรโมชั่น งานแสดงสินค้า หรือกิจกรรมใดๆ ที่เกี่ยวข้องกับธุรกิจของบริษัท เป็นต้น"}
 
                                     </span></li>
 
@@ -375,10 +385,10 @@ const Privacy = () => {
 
                                 </span><span className="table-cell"><span className="font-normal break-all">
 
-                                    {locale === "en" ? "Behavioral Activities on Websites and Applications: Company may use cookies as a tool to collect Personal Data" : "ข้อมูลเกี่ยวกับพฤติกรรมการสืบค้นข้อมูลในเว็บไซต์และการใช้งานแอปพลิเคชัน โดยบริษัทมีสิทธิใช้คุกกี้ (Cookies) เป็นเครื่องมือในการรวบรวมข้อมูลส่วนบุคคล"}
+                                    {locale === "en" ? "Behavioral Activities on Websites and Applications:" : "ข้อมูลเกี่ยวกับพฤติกรรมการสืบค้นข้อมูลในเว็บไซต์และการใช้งานแอปพลิเคชัน"}
                                 </span>
 
-                                        {locale === "en" ? " such as IP addresses; web browser; visited web page; visiting time; websites that refers to Company's website; mobile operator; model and system of the electronic devices." : " เช่น หมายเลขไอพี (IP Address) ชนิดของเว็บเบราว์เซอร์ (Web browser) ที่ใช้ในการเข้าถึง หน้าเว็บเพจ (Web page) ที่เยี่ยมชม ระยะเวลาที่เยี่ยมชม เว็บไซต์ที่อ้างถึงเว็บของบริษัท ข้อมูลเครือข่ายโทรศัพท์ ข้อมูลรุ่นและระบบของเครื่องมืออุปกรณ์ เป็นต้น"}
+                                        {locale === "en" ? " Company may use cookies as a tool to collect Personal Data such as IP addresses; web browser; visited web page; visiting time; websites that refers to Company\'s website; mobile operator; model and system of the electronic devices." : " โดยบริษัทมีสิทธิใช้คุกกี้ (Cookies) เป็นเครื่องมือในการรวบรวมข้อมูลส่วนบุคคล เช่น หมายเลขไอพี (IP Address) ชนิดของเว็บเบราว์เซอร์ (Web browser) ที่ใช้ในการเข้าถึง หน้าเว็บเพจ (Web page) ที่เยี่ยมชม ระยะเวลาที่เยี่ยมชม เว็บไซต์ที่อ้างถึงเว็บของบริษัท ข้อมูลเครือข่ายโทรศัพท์ ข้อมูลรุ่นและระบบของเครื่องมืออุปกรณ์ เป็นต้น"}
 
 
                                     </span></li>
@@ -391,7 +401,7 @@ const Privacy = () => {
                                     {locale === "en" ? "Sensitive Data:" : "ข้อมูลส่วนบุคคลที่อ่อนไหว"}
 
                                 </span>
-                                        {locale === "en" ? " such as race; religion; dietary information; political opinions; biological information; fingerprint; facial recognition; person identity information (biometrics); eye recognition; health data; weight; height; allergy; medical records; and criminal records." : " เช่น เชื้อชาติ ศาสนา ข้อมูลโภชนาการ ความคิดเห็นทางการเมือง ข้อมูลทางชีวภาพ ลายนิ้วมือ ระบบจดจำใบหน้า ข้อมูลอัตลักษณ์บุคคล (Biometrics) ใบหน้า ข้อมูลจากการจดจำม่านตา ข้อมูลสุขภาพ น้ำหนัก ส่วนสูง ประวัติอาการแพ้ ประวัติทางการแพทย์ และประวัติอาชญากรรม เป็นต้น"}
+                                        {locale === "en" ? " such as race; religion; dietary information; political opinions; biological information; fingerprint; facial recognition; person identity information (biometrics); eye recognition; health data; weight; height; allergy; medical records; and criminal records." : " เช่น เชื้อชาติ ศาสนา ข้อมูลโภชนาการ ความคิดเห็นทางการเมือง ข้อมูลทางชีวภาพ ลายนิ้วมือ ระบบจดจำใบหน้า ข้อมูลอัตลักษณ์บุคคล (Biometrics) ข้อมูลจากการจดจำม่านตา ข้อมูลสุขภาพ น้ำหนัก ส่วนสูง ประวัติอาการแพ้ ประวัติทางการแพทย์ และประวัติอาชญากรรม เป็นต้น"}
                                     </span></li>
 
                                 <li> <span className="w-10 table-cell">
@@ -437,7 +447,7 @@ const Privacy = () => {
 
                                 </span><span className="table-cell"><span className="font-normal break-all">
 
-                                    {locale === "en" ? "Stakeholder Data:" : "ข้อมูลผู้มีส่วนได้ส่วนเสีย"}
+                                    {locale === "en" ? "Stakeholder Data:" : "ข้อมูลผู้มีส่วนได้เสีย"}
 
                                 </span>
 
@@ -447,12 +457,12 @@ const Privacy = () => {
 
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
 
-                                {locale === "en" ? "If you would like to use any services or product of Company or doing business with Company, Company will need the Customer' Personal Data in order to provide such services or products, enter into contract with the Customers, perform any obligations, or comply with any applicable laws.  If you do not provide the Personal Data to Company, Company will not be able to provide such products or services, enter into contract with or perform any obligations with you and it might result to a breach of a contract with Company by you, or breach of applicable laws." : "หากท่านต้องการซื้อสินค้าหรือใช้บริการใดๆ ของบริษัท ทำงานร่วมกับบริษัท หรือมีความสัมพันธ์ทางธุรกิจใดๆ กับ บริษัท บริษัทจะต้องใช้ข้อมูลส่วนบุคคลของท่าน เพื่อจำหน่ายสินค้าหรือให้บริการดังกล่าว ทำข้อตกลงกับท่าน ปฏิบัติตามภาระผูกพันใดๆ ที่มีไว้กับท่าน หรือปฏิบัติตามกฎหมายที่บังคับใช้ หากท่านไม่ให้ข้อมูลส่วนบุคคลแก่บริษัท บริษัทจะไม่สามารถจำหน่ายสินค้าหรือให้บริการดังกล่าว ทำข้อตกลงใดๆ กับท่าน ปฏิบัติตามภาระผูกพันใดๆ ที่มีไว้กับท่าน และอาจส่งผลให้มีการละเมิดสัญญาระหว่างท่านกับบริษัท หรือการละเมิดกฎหมายที่บังคับใช้"}
+                                {locale === "en" ? "If you would like to use any services or product of Company, doing business with Company, or having any other business transactions with Company, Company will need the Customer\' Personal Data in order to provide such services or products, enter into contract with the Customers, perform any obligations, or comply with any applicable laws.  If you do not provide the Personal Data to Company, Company will not be able to provide such products or services, enter into contract with or perform any obligations with you and it might result to a breach of a contract with Company by you, or breach of applicable laws." : "หากท่านต้องการซื้อสินค้าหรือใช้บริการใดๆ ของบริษัท ทำงานร่วมกับบริษัท หรือมีความสัมพันธ์ทางธุรกิจใดๆ กับ บริษัท บริษัทจะต้องใช้ข้อมูลส่วนบุคคลของท่าน เพื่อจำหน่ายสินค้าหรือให้บริการดังกล่าว ทำข้อตกลงกับท่าน ปฏิบัติตามภาระผูกพันใดๆ ที่มีไว้กับท่าน หรือปฏิบัติตามกฎหมายที่บังคับใช้ หากท่านไม่ให้ข้อมูลส่วนบุคคลแก่บริษัท บริษัทจะไม่สามารถจำหน่ายสินค้าหรือให้บริการดังกล่าว ทำข้อตกลงใดๆ กับท่าน ปฏิบัติตามภาระผูกพันใดๆ ที่มีไว้กับท่าน และอาจส่งผลให้มีการละเมิดสัญญาระหว่างท่านกับบริษัท หรือการละเมิดกฎหมายที่บังคับใช้"}
                             </p>
 
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
 
-                                {locale === "en" ? "If you provide the Personal Data about other persons to Company, the Customers affirm that this Privacy Notice have been reviewed by such persons and that such persons have given their consent regarding the processing of their Personal Data (if required). You have to present the documents evidencing that the above actions have been carried out as may be requested by Company." : "หากท่านให้ข้อมูลส่วนบุคคลที่เกี่ยวกับบุคคลอื่นแก่บริษัท  ท่านให้คำรับรองว่าบุคคลดังกล่าวได้รับทราบถึงนโยบายความเป็นส่วนตัวนี้ และบุคคลดังกล่าวได้ให้ความยินยอมในการประมวลผลข้อมูลส่วนบุคคลของตน (ถ้าจำเป็น)  ทั้งนี้ ในกรณีที่บริษัทร้องขอ ท่านจะต้องสามารถแสดงเอกสารที่ยืนยันว่าได้แจ้งให้บุคคลดังกล่าวรับทราบถึงนโยบายความเป็นส่วนตัวฉบับนี้ และได้ดำเนินการขอความยินยอมดังกล่าวข้างต้น (ถ้ามี) เป็นที่เรียบร้อยแล้ว"}
+                                {locale === "en" ? "If you provide the Personal Data about other persons to Company, you affirm that this Privacy Notice has been reviewed by such persons and that such persons have given their consent regarding the processing of their Personal Data (if required). You have to present the documents evidencing that the above actions have been carried out as may be requested by Company." : "หากท่านให้ข้อมูลส่วนบุคคลที่เกี่ยวกับบุคคลอื่นแก่บริษัท  ท่านให้คำรับรองว่าบุคคลดังกล่าวได้รับทราบถึงนโยบายความเป็นส่วนตัวนี้ และบุคคลดังกล่าวได้ให้ความยินยอมในการประมวลผลข้อมูลส่วนบุคคลของตน (ถ้าจำเป็น)  ทั้งนี้ ในกรณีที่บริษัทร้องขอ ท่านจะต้องสามารถแสดงเอกสารที่ยืนยันว่าได้แจ้งให้บุคคลดังกล่าวรับทราบถึงนโยบายความเป็นส่วนตัวฉบับนี้ และได้ดำเนินการขอความยินยอมดังกล่าวข้างต้น (ถ้ามี) เป็นที่เรียบร้อยแล้ว"}
                             </p>
 
 
@@ -474,16 +484,13 @@ const Privacy = () => {
                                 {locale === "en" ? "3.	Collection of Personal Data" : "3. วิธีการเก็บรวบรวมข้อมูลส่วนบุคคล"}
                             </h1>
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
-                                {locale === "en" ? "Company may collect the Personal Data through you, other sources, from Company's group company, business partners, or communications both online and offline as follows:" : "บริษัทจะเก็บรวบรวมข้อมูลส่วนบุคคลของท่านที่บริษัทได้รับจากท่าน หรือแหล่งข้อมูลอื่นๆ หรือจากบริษัทในเครือ บริษัทย่อย พันธมิตรทางธุรกิจ หรือการสื่อสารระหว่างบริษัทเหล่านั้นกับท่าน ทั้งวิธีการ Offline และ Online เช่น"}
-
-
+                                {locale === "en" ? "Company may collect the Personal Data through you, other sources, from Company\'s group companies, business partners, or communications both online and offline as follows:" : "บริษัทจะเก็บรวบรวมข้อมูลส่วนบุคคลของท่านที่บริษัทได้รับจากท่าน หรือแหล่งข้อมูลอื่นๆ หรือจากบริษัทในเครือ บริษัทย่อย พันธมิตรทางธุรกิจ หรือการสื่อสารระหว่างบริษัทเหล่านั้นกับท่าน ทั้งวิธีการ Online และ Offline  เช่น"}
                             </p>
-
 
 
                             <ul className="ml-5 list-outside font-light text-sm sm:text-base  mb-2">
                                 <li> <span className="w-10 table-cell">3.1</span><span className="table-cell">
-                                    {locale === "en" ? "Company's channels such as documents (both hard copies and electronic form), phone call, direct communication, Company's event, Company's products and services, job applications, or any other transaction with Company." : "ผ่านช่องทางของบริษัท เช่น เอกสาร ทั้งสื่อสิ่งพิมพ์และสื่ออิเล็กทรอนิกส์ ทางโทรศัพท์ ทางวาจา การเข้าร่วมกิจกรรม การซื้อสินค้าและบริการ การสมัครเข้าทำงาน หรือการเข้าทำธุรกรรมใดๆ กับบริษัท"}
+                                    {locale === "en" ? "Company\'s channels such as documents (both hard copies and electronic form), phone call, direct communication, Company\'s event, Company\'s products and services, job applications, or any other transaction with Company." : "ผ่านช่องทางของบริษัท เช่น เอกสาร ทั้งสื่อสิ่งพิมพ์และสื่ออิเล็กทรอนิกส์ ทางโทรศัพท์ ทางวาจา การเข้าร่วมกิจกรรม การซื้อสินค้าและบริการ การสมัครเข้าทำงาน หรือการเข้าทำธุรกรรมใดๆ กับบริษัท"}
 
                                 </span></li>
                                 <li> <span className="w-10 table-cell">3.2</span><span className="table-cell">
@@ -506,7 +513,7 @@ const Privacy = () => {
                                 {locale === "en" ? "4.	Purpose of Personal Data Processing" : "4. วัตถุประสงค์ในการเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคล"}
                             </h1>
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
-                                {locale === "en" ? "Company may collect, use, and disclose your Personal Data to the extent necessary; as required by law, for the purposes and legal basis stated hereafter, including any purposes stated in the Privacy Notice, Privacy Policy of the Company, other purposes that you gave consent to the Company from time to time, and any other purposes as permitted or required by the Personal Data Protection Act B.E. 2562 (“PDPA”) and/or applicable laws." : "  บริษัทอาจเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลของท่านเท่าที่จำเป็น ตามที่กฎหมายกำหนด เพื่อวัตถุประสงค์ และพื้นฐานที่ถูกต้องตามกฎหมายที่ระบุไว้ต่อไปนี้ รวมถึงวัตถุประสงค์ใดๆ และพื้นฐานทางกฎหมายที่ระบุไว้ในนโยบายความเป็นส่วนตัว นโยบายคุ้มครองข้อมูลส่วนบุคคล วัตถุประสงค์อื่นใดที่ท่านให้ความยินยอมแก่บริษัทเป็นครั้งคราว และวัตถุประสงค์อื่นใดตามที่ได้รับอนุญาตหรือจำเป็นตาม พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (“PDPA”) และ/หรือกฎหมายที่บังคับใช้"}
+                                {locale === "en" ? "Company may collect, use, and disclose your Personal Data to the extent necessary; as required by law, for the purposes and legal basis stated hereafter, including any purposes stated in the Privacy Notice, Privacy Policy of the Company, other purposes that you gave consent to the Company from time to time, and any other purposes as permitted or required by the Personal Data Protection Act B.E. 2562 (\"PDPA\") and/or applicable laws." : "  บริษัทอาจเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลของท่านเท่าที่จำเป็น ตามที่กฎหมายกำหนด เพื่อวัตถุประสงค์ และพื้นฐานที่ถูกต้องตามกฎหมายที่ระบุไว้ต่อไปนี้ รวมถึงวัตถุประสงค์ใดๆ และพื้นฐานทางกฎหมายที่ระบุไว้ในนโยบายความเป็นส่วนตัว นโยบายคุ้มครองข้อมูลส่วนบุคคล วัตถุประสงค์อื่นใดที่ท่านให้ความยินยอมแก่บริษัทเป็นครั้งคราว และวัตถุประสงค์อื่นใดตามที่ได้รับอนุญาตหรือจำเป็นตาม พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (\"PDPA\") และ/หรือกฎหมายที่บังคับใช้"}
 
                             </p>
 
@@ -518,7 +525,7 @@ const Privacy = () => {
 
                                 <li> <span className="w-10 table-cell">4.2</span><span className="table-cell">
 
-                                    {locale === "en" ? "To communicate and notify any information relating to Company's project, product and service and to present projects that might interested you, including offering special promotion and marketing campaign of projects, products and services.  In case of an online booking, company may collect and use Personal Data as necessity to issue reservation documents." : "เพื่อติดต่อสื่อสาร แจ้งข้อมูลข่าวสารต่างๆ ที่เกี่ยวข้องกับโครงการ สินค้าและการบริการของบริษัท ประชาสัมพันธ์ และนำเสนอโครงการที่ท่านอาจจะสนใจ รวมถึงข้อเสนอเกี่ยวกับโครงการ สินค้าและการให้บริการ และโปรโมชั่นต่างๆ ในการส่งเสริมกิจกรรมทางการตลาด หรือกรณีมีการจองออนไลน์ (Online Booking) บริษัทจะทำการจัดเก็บและใช้ข้อมูลที่จำเป็นในการออกเอกสารสำคัญสำหรับการทำรายการจอง"}
+                                    {locale === "en" ? "To communicate and notify any information relating to Company\'s project, product and service and to present projects that might interested you, including offering special promotion and marketing campaign of projects, products and services.  In case of an online booking, Company may collect and use Personal Data as necessity to issue reservation documents." : "เพื่อติดต่อสื่อสาร แจ้งข้อมูลข่าวสารต่างๆ ที่เกี่ยวข้องกับโครงการ สินค้าและการบริการของบริษัท ประชาสัมพันธ์ และนำเสนอโครงการที่ท่านอาจจะสนใจ รวมถึงข้อเสนอเกี่ยวกับโครงการ สินค้าและการให้บริการ และโปรโมชั่นต่างๆ ในการส่งเสริมกิจกรรมทางการตลาด หรือกรณีมีการจองออนไลน์ (Online Booking) บริษัทจะทำการจัดเก็บและใช้ข้อมูลที่จำเป็นในการออกเอกสารสำคัญสำหรับการทำรายการจอง"}
                                 </span></li>
 
                                 <li> <span className="w-10 table-cell">4.3</span><span className="table-cell">
@@ -531,7 +538,7 @@ const Privacy = () => {
 
                                 <li><span className="w-10 table-cell">4.5</span><span className="table-cell">
 
-                                    {locale === "en" ? "To take photos or video footages of you at sale galleries and publish or advertise such photos or video footages on Company's website and applications or other platforms." : "เพื่อถ่ายภาพหรือวิดีโอของท่านใน Sales Gallery และเผยแพร่หรือโฆษณาภาพและ/หรือวิดีโอดังกล่าวบนเว็บไซต์และแอปพลิเคชันของบริษัทหรือแพลตฟอร์มอื่นๆ"}
+                                    {locale === "en" ? "To take photos or video footages of you at sale galleries and publish or advertise such photos and/or video footages on Company\'s website and applications or other platforms." : "เพื่อถ่ายภาพหรือวิดีโอของท่านใน Sales Gallery และเผยแพร่หรือโฆษณาภาพและ/หรือวิดีโอดังกล่าวบนเว็บไซต์และแอปพลิเคชันของบริษัทหรือแพลตฟอร์มอื่นๆ"}
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.6</span><span className="table-cell">
 
@@ -543,11 +550,11 @@ const Privacy = () => {
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.8</span><span className="table-cell">
 
-                                    {locale === "en" ? "To collect your Sensitive Data as necessary such as your identification card (which contains your religion and/or blood type) for verification of your identity before continuing the transaction." : "เพื่อรวบรวมข้อมูลส่วนบุคคลที่ละเอียดอ่อนของคุณตามความจำเป็น เช่น บัตรประจำตัวของคุณ (ซึ่งมีศาสนาและ/หรือกรุ๊ปเลือด) เพื่อยืนยันตัวตนของท่านก่อนทำธุรกรรมต่อไป"}
+                                    {locale === "en" ? "To collect your Sensitive Data as necessary such as your identification card (which contains your religion and/or blood type) for verification of your identity before continuing the transaction." : "เพื่อรวบรวมข้อมูลส่วนบุคคลที่ละเอียดอ่อนของท่านตามความจำเป็น เช่น บัตรประจำตัวของท่าน (ซึ่งมีศาสนาและ/หรือกรุ๊ปเลือด) เพื่อยืนยันตัวตนของท่านก่อนทำธุรกรรมต่อไป"}
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.9</span><span className="table-cell">
 
-                                    {locale === "en" ? "To comply with legal requirements such as Personal Data Protection Act B.E. 2562 (“PDPA”), Revenue Code, Public Limited Companies Act B.E. 2535, Securities and Exchange Act B.E. 2535, Social Security Act B.E. 2533, Hotel Act B.E. 2547, Accounting Act B.E. 2543, Computer-Related Crime Act B.E. 2550, and Immigration Act B.E. 2522" : "เพื่อให้เป็นไปตามข้อกำหนดของกฎหมาย เช่น PDPA ประมวลกฎหมายแพ่งและพาณิชย์ ประมวลรัษฎากร พระราชบัญญัติบริษัทมหาชนจำกัด พ.ศ. 2535 และพระราชบัญญัติหลักทรัพย์และตลาดหลักทรัพย์ พ.ศ. 2535 พระราชบัญญัติคุ้มครองแรงงาน พ.ศ. 2541 พระราชบัญญัติประกันสังคม พ.ศ. 2533 พระราชบัญญัติโรงแรม พ.ศ. 2547 พระราชบัญญัติการบัญชี พ.ศ. 2543 พระราชบัญญัติว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ พ.ศ. 2550 และพระราชบัญญัติคนเข้าเมือง พ.ศ. 2522 เป็นต้น"}
+                                    {locale === "en" ? "To comply with legal requirements such as PDPA, Thai Civil and Commercial Code, Revenue Code, Labour Protection Act B.E. 2541, Public Limited Companies Act B.E. 2535, Securities and Exchange Act B.E. 2535, Social Security Act B.E. 2533, Hotel Act B.E. 2547, Accounting Act B.E. 2543, Computer-Related Crime Act B.E. 2550, and Immigration Act B.E. 2522." : "เพื่อให้เป็นไปตามข้อกำหนดของกฎหมาย เช่น PDPA ประมวลกฎหมายแพ่งและพาณิชย์ ประมวลรัษฎากร พระราชบัญญัติบริษัทมหาชนจำกัด พ.ศ. 2535 และพระราชบัญญัติหลักทรัพย์และตลาดหลักทรัพย์ พ.ศ. 2535 พระราชบัญญัติคุ้มครองแรงงาน พ.ศ. 2541 พระราชบัญญัติประกันสังคม พ.ศ. 2533 พระราชบัญญัติโรงแรม พ.ศ. 2547 พระราชบัญญัติการบัญชี พ.ศ. 2543 พระราชบัญญัติว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ พ.ศ. 2550 และพระราชบัญญัติคนเข้าเมือง พ.ศ. 2522 เป็นต้น"}
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.10</span> <span className="table-cell">
 
@@ -559,7 +566,7 @@ const Privacy = () => {
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.12</span> <span className="table-cell">
 
-                                    {locale === "en" ? "To review, evaluate and asses you (as a candidate) for the positions with Company, including to communicate with and interview them such as employee and salesperson." : "เพื่อตรวจสอบและประเมินความรู้ความสามารถของท่าน ซึ่งอาจเป็นผู้ได้รับคัดเลือกเข้าทำงานกับบริษัท รวมถึงเพื่อการติดต่อสื่อสารและการสัมภาษณ์ เช่น พนักงานทั่วไปของบริษัท และพนักงานฝ่ายขาย เป็นต้น"}
+                                    {locale === "en" ? "To review, evaluate and asses you (as a candidate) for the positions with Company, including to communicate with and interview them such as employee and salesperson." : "เพื่อตรวจสอบและประเมินความรู้ความสามารถของท่าน ในฐานะผู้สมัครงานในตำแหน่งที่บริษัทเปิดรับ รวมถึงเพื่อการติดต่อสื่อสารและการสัมภาษณ์ เช่น พนักงานทั่วไปของบริษัท และพนักงานฝ่ายขาย เป็นต้น"}
 
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.13</span> <span className="table-cell">
@@ -568,10 +575,10 @@ const Privacy = () => {
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.14</span> <span className="table-cell">
 
-                                    {locale === "en" ? "To offer products and services, research and development of both existing and future projects and services of Company, including customer relationship after such sales and services." : "เพื่อการจำหน่ายสินค้าและการให้บริการ การปรับปรุงและพัฒนาโครงการและการให้บริการของบริษัท ทั้งในปัจจุบันและที่จะมีขึ้นในอนาคต รวมถึงการให้บริการลูกค้าสัมพันธ์หลังการจำหน่ายสินค้าและการให้บริการดังกล่าว"}
+                                    {locale === "en" ? "To offer products and services, improve and development of both existing and future projects and services of Company, including customer relationship after such sales and services." : "เพื่อการจำหน่ายสินค้าและการให้บริการ การปรับปรุงและพัฒนาโครงการและการให้บริการของบริษัท ทั้งในปัจจุบันและที่จะมีขึ้นในอนาคต รวมถึงการให้บริการลูกค้าสัมพันธ์หลังการจำหน่ายสินค้าและการให้บริการดังกล่าว"}
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.15</span> <span className="table-cell">
-                                    {locale === "en" ? "To provide personalized products and services" : "เพื่อเสนอจำหน่ายสินค้าและการให้บริการแบบเฉพาะเจาะจงกับความต้องการของท่าน"}
+                                    {locale === "en" ? "To provide personalized products and services." : "เพื่อเสนอจำหน่ายสินค้าและการให้บริการแบบเฉพาะเจาะจงกับความต้องการของท่าน"}
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.16</span> <span className="table-cell">
 
@@ -607,7 +614,7 @@ const Privacy = () => {
                                     {locale === "en" ? "To allow advisors, service providers, vendors, suppliers, contractors, sub-contractors to provide and supply Company with services and products." : "เพื่อให้ที่ปรึกษา ผู้ให้บริการ คู่ค้า ซัพพลายเออร์ ผู้รับเหมา ผู้รับเหมาช่วง สามารถจัดหาสินค้าและบริการให้กับบริษัท"} </span></li>
                                 <li><span className="w-10 table-cell">4.27</span> <span className="table-cell">
 
-                                    {locale === "en" ? "To conduct, manage, and improve business operation and provide a good corporate governance." : "ดำเนินการ บริหารจัดการ และปรับปรุงการดำเนินธุรกิจตามปกติ และจัดให้มีการบริหารจัดการเพื่อการกำกับดูแลกิจการที่ดี"}</span></li>
+                                    {locale === "en" ? "To conduct, manage, and improve business operation and provide a good corporate governance." : "เพื่อดำเนินการ บริหารจัดการ และปรับปรุงการดำเนินธุรกิจตามปกติ และจัดให้มีการบริหารจัดการเพื่อการกำกับดูแลกิจการที่ดี"}</span></li>
                                 <li><span className="w-10 table-cell">4.28</span> <span className="table-cell">
 
                                     {locale === "en" ? "To search and evaluate performance of director, employee, salesperson or any other person joining with Company." : "เพื่อสรรหาและประเมินศักยภาพของกรรมการ พนักงานทั่วไป พนักงานขาย หรือบุคคลอื่นๆ เพื่อร่วมงานกับบริษัท"}</span></li>
@@ -622,12 +629,12 @@ const Privacy = () => {
                                 </span></li>
                                 <li><span className="w-10 table-cell">4.32</span> <span className="table-cell">
 
-                                    {locale === "en" ? "To enter into contract or communicate with corporate clients, supplier or any stakeholders by communicating through director or employee." : "เข้าทำสัญญาหรือสื่อสารกับลูกค้าองค์กร คู่ค้า หรือผู้มีส่วนได้เสียโดยการผ่านตัวแทน เช่น กรรมการหรือพนักงาน เป็นต้น"} </span></li>
+                                    {locale === "en" ? "To enter into contract or communicate with corporate clients, supplier or any stakeholders by communicating through director or employee." : "เพื่อเข้าทำสัญญาหรือสื่อสารกับลูกค้าองค์กร ซัพพลายเออร์ หรือผู้มีส่วนได้เสีย โดยการสื่อสารผ่านตัวแทน เช่น กรรมการหรือพนักงาน เป็นต้น"} </span></li>
                                 <li><span className="w-10 table-cell">4.33</span> <span className="table-cell">
 
                                     {locale === "en" ? "To take photos or video footages of you at any events launching by Company and publish or advertise such photos or video footages on Company's website and applications or other platforms." : "เพื่อถ่ายภาพหรือวิดีโอของท่านสำหรับกิจกรรมใดๆ ที่จัดขึ้นโดยบริษัท และเผยแพร่ หรือโฆษณาภาพหรือวิดีโอดังกล่าวบนเว็บไซต์และแอปพลิเคชันของบริษัทหรือแพลตฟอร์มอื่นๆ"}</span></li>
                                 <li><span className="w-10 table-cell">4.34</span> <span className="table-cell">
-                                    {locale === "en" ? "To share your Personal Data for the purpose of merger and acquisition, business reorganization, insolvency, rehabilitation and similar proceedings of Company." : "เพื่อแบ่งปันข้อมูลส่วนบุคคลของท่านตามความจำเป็นเพื่อวัตถุประสงค์ในการควบรวมกิจการ การปรับโครงสร้างองค์กรธุรกิจ การล้มละลาย การฟื้นฟู และการดำเนินการที่คล้ายคลึงกันบริษัท"}</span></li>
+                                    {locale === "en" ? "To share your Personal Data for the purpose of merger and acquisition, business reorganization, insolvency, rehabilitation and similar proceedings of Company." : "เพื่อแบ่งปันข้อมูลส่วนบุคคลของท่านตามความจำเป็นเพื่อวัตถุประสงค์ในการควบรวมกิจการ การปรับโครงสร้างองค์กรธุรกิจ การล้มละลาย การฟื้นฟูกิจการ และการดำเนินการที่คล้ายคลึงกันของบริษัท"}</span></li>
                                 <li><span className="w-10 table-cell">4.35</span> <span className="table-cell">
 
                                     {locale === "en" ? "To evaluate any risks arising from an investment." : "เพื่อประเมินความเสี่ยงที่อาจเกิดขึ้นจากการลงทุน"}</span></li>
@@ -786,44 +793,44 @@ const Privacy = () => {
                             </h1>
                             <ul className="ml-5 list-outside font-light text-sm sm:text-base  mb-2">
                                 <li> <span className="w-10 table-cell">13.1</span><span className="table-cell">
-                                    {locale === "en" ? "Access : You may have the right to access or request a copy of the Personal Data, which Company is collecting, using, or disclosing about the Customers, including to disclose the acquisition of the Data Subjects' Personal Data which Company obtained without consent. For your own privacy and security, Company may require you to prove their identity before providing the requested Personal Data." : "สิทธิในการเข้าถึงข้อมูล ท่านมีสิทธิเข้าถึงข้อมูล หรือขอรับสำเนาของข้อมูลส่วนบุคคล ของท่านซึ่งบริษัทได้เก็บรวบรวม ใช้ หรือเปิดเผย รวมถึงขอให้เปิดเผยถึงการได้มาของข้อมูลส่วนบุคคลดังกล่าวที่ท่านไม่ได้ให้ความยินยอม  ทั้งนี้ เพื่อเป็นการคุ้มครองความเป็นส่วนตัวและความปลอดภัย  บริษัทอาจร้องขอให้ท่านยืนยันตัวตนก่อนดำเนินการตามคำขอ"}
+                                    {locale === "en" ? "Access: You may have the right to access or request a copy of the Personal Data, which Company is collecting, using, or disclosing about yourself, including to disclose the acquisition of the data subjects\' Personal Data which Company obtained without consent. For your own privacy and security, Company may require you to prove your identity before proceeding with your request." : "สิทธิในการเข้าถึงข้อมูล ท่านมีสิทธิเข้าถึงข้อมูล หรือขอรับสำเนาของข้อมูลส่วนบุคคล ของท่านซึ่งบริษัทได้เก็บรวบรวม ใช้ หรือเปิดเผย รวมถึงขอให้เปิดเผยถึงการได้มาของข้อมูลส่วนบุคคลดังกล่าวที่ท่านไม่ได้ให้ความยินยอม  ทั้งนี้ เพื่อเป็นการคุ้มครองความเป็นส่วนตัวและความปลอดภัย  บริษัทอาจร้องขอให้ท่านยืนยันตัวตนก่อนดำเนินการตามคำขอ"}
 
                                 </span></li>
 
                                 <li> <span className="w-10 table-cell">13.2</span><span className="table-cell">
 
-                                    {locale === "en" ? "Data Portability : You may have the right to obtain Personal Data of them, which Company holds, in a structured, electronic format, and to send or transfer such Personal Data to another data controller, where this is (a) your Personal Data, and (b) if Company is collecting, using or disclosing such Personal Data on the basis of your consent or to perform a contract with you." : "  สิทธิในการขอให้โอนข้อมูลส่วนบุคคล ท่านมีสิทธิในการโอนย้ายข้อมูลส่วนบุคคลของตน (ซึ่งบริษัทได้เก็บรวบรวมเอาไว้ ไม่ว่าในรูปแบบเอกสารสิ่งพิมพ์ หรืออิเล็กทรอนิกส์) ไปยังผู้ควบคุมข้อมูลส่วนบุคคลอื่นได้  ในกรณีที่ (ก) เป็นข้อมูลส่วนบุคคลของท่าน และ (ข) บริษัทเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลนั้นด้วยฐานความยินยอม หรือฐานสัญญา"}
+                                    {locale === "en" ? "Data Portability: You may have the right to obtain your Personal Data, which Company holds, in a structured, electronic format, and to send or transfer such Personal Data to another data controller, where this is (a) your Personal Data, and (b) if Company is collecting, using or disclosing such Personal Data on the basis of your consent or to perform a contract with you." : "สิทธิในการขอให้โอนข้อมูลส่วนบุคคล ท่านมีสิทธิในการขอรับข้อมูลส่วนบุคคลของท่าน ซึ่งบริษัทได้เก็บรวบรวมเอาไว้ ไม่ว่าในรูปแบบเอกสารสิ่งพิมพ์ หรืออิเล็กทรอนิกส์ และโอนย้ายข้อมูลส่วนบุคคลดังกล่าวไปยังผู้ควบคุมข้อมูลส่วนบุคคลอื่นได้  ในกรณีที่ (ก) เป็นข้อมูลส่วนบุคคลของท่าน และ (ข) บริษัทเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคลนั้นด้วยฐานความยินยอม หรือฐานสัญญา"}
                                 </span></li>
 
                                 <li> <span className="w-10 table-cell">13.3</span><span className="table-cell">
 
-                                    {locale === "en" ? "Rectification : You may have the right to rectify incomplete, inaccurate, misleading, or not up-to-date Personal Data which Company collects, uses, or discloses." : "สิทธิในการขอแก้ไขหรือปรับปรุงข้อมูลส่วนบุคคลให้ถูกต้อง ท่านอาจมีสิทธิที่จะขอแก้ไขหรือปรับปรุงข้อมูลส่วนบุคคลของท่านที่ไม่ถูกต้อง ไม่ครบถ้วนสมบูรณ์ ก่อให้เกิดความเข้าใจผิด หรือไม่เป็นปัจจุบัน"}
+                                    {locale === "en" ? "Rectification: You may have the right to rectify incomplete, inaccurate, misleading, or not up-to-date Personal Data which Company collects, uses, or discloses." : "สิทธิในการขอแก้ไขหรือปรับปรุงข้อมูลส่วนบุคคลให้ถูกต้อง ท่านอาจมีสิทธิที่จะขอแก้ไขหรือปรับปรุงข้อมูลส่วนบุคคลของท่านที่ไม่ถูกต้อง ไม่ครบถ้วนสมบูรณ์ ก่อให้เกิดความเข้าใจผิด หรือไม่เป็นปัจจุบัน"}
                                 </span></li>
 
                                 <li> <span className="w-10 table-cell">13.4</span><span className="table-cell">
 
-                                    {locale === "en" ? "Withdraw Consent : For the purposes of consent, which you have given to Company for the collecting, using or disclosing of your Personal Data, you have the right to withdraw such consent at any time." : " สิทธิในการขอถอนความยินยอม ท่านมีสิทธิขอถอนความยินยอมเมื่อใดก็ได้   โดยเป็นไปตามวัตถุประสงค์ที่ท่านได้ให้ความยินยอมไว้กับบริษัทในการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคล"}
+                                    {locale === "en" ? "Withdraw Consent: For the purposes of consent, which you have given to Company for the collecting, using or disclosing of your Personal Data, you have the right to withdraw such consent at any time." : "สิทธิในการขอถอนความยินยอม ท่านมีสิทธิขอถอนความยินยอมเมื่อใดก็ได้   โดยเป็นไปตามวัตถุประสงค์ที่ท่านได้ให้ความยินยอมไว้กับบริษัทในการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลส่วนบุคคล"}
                                 </span></li>
 
                                 <li><span className="w-10 table-cell">13.5</span><span className="table-cell">
 
-                                    {locale === "en" ? "Objection : You may have the right to object the collection, use, and disclosure of the Personal Data in certain circumstances, including the case where Personal Data is being processed under the basis of public interest and legitimate interest or for the purposes of direct marketing and/or scientific, historical or statistic research. " : "สิทธิในการโต้แย้งคัดค้านการดำเนินการใดๆ ท่านมีสิทธิที่จะคัดค้านการเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลได้ในบางกรณี ซึ่งรวมถึงกรณีการประมวลผลข้อมูลส่วนบุคคลซึ่งเป็นไปตามฐานประโยชน์สาธารณะ และฐานผลประโยชน์โดยชอบด้วยกฎหมาย หรือเพื่อวัตถุประสงค์ในการทำการตลาดแบบตรงและ/หรือ การวิจัยทางวิทยาศาสตร์ ประวัติศาสตร์ หรือสถิติ"}
+                                    {locale === "en" ? "Objection: You may have the right to object the collection, use, and disclosure of the Personal Data in certain circumstances, including the case where Personal Data is being processed under the basis of public interest and legitimate interest or for the purposes of direct marketing and/or scientific, historical or statistic research." : "สิทธิในการโต้แย้งคัดค้านการดำเนินการใดๆ ท่านมีสิทธิที่จะคัดค้านการเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคลได้ในบางกรณี ซึ่งรวมถึงกรณีการประมวลผลข้อมูลส่วนบุคคลซึ่งเป็นไปตามฐานประโยชน์สาธารณะ และฐานผลประโยชน์โดยชอบด้วยกฎหมาย หรือเพื่อวัตถุประสงค์ในการทำการตลาดแบบตรงและ/หรือ การวิจัยทางวิทยาศาสตร์ ประวัติศาสตร์ หรือสถิติ"}
 
                                 </span></li>
                                 <li><span className="w-10 table-cell">13.6</span><span className="table-cell">
 
-                                    {locale === "en" ? "Restriction : You may have the right to restrict the processing of the Personal Data in circumstances where you have contested the accuracy of the Personal Data, for the period enabling Company to verify its accuracy." : "สิทธิในการระงับการใช้ข้อมูลส่วนบุคคล ท่านอาจมีสิทธิขอให้บริษัทระงับการใช้ข้อมูลส่วนบุคคลเป็นการชั่วคราวได้ในบางกรณี เช่น ท่านได้โต้แย้งเกี่ยวกับความถูกต้องของข้อมูลส่วนบุคคล หรือ บริษัทอยู่ระหว่างการตรวจสอบความถูกต้องของข้อมูลส่วนบุคคล"}
+                                    {locale === "en" ? "Restriction: You may have the right to restrict the processing of the Personal Data in circumstances where you have contested the accuracy of the Personal Data, for the period enabling Company to verify its accuracy." : "สิทธิในการระงับการใช้ข้อมูลส่วนบุคคล ท่านอาจมีสิทธิขอให้บริษัทระงับการใช้ข้อมูลส่วนบุคคลเป็นการชั่วคราวได้ในบางกรณี เช่น ท่านได้โต้แย้งเกี่ยวกับความถูกต้องของข้อมูลส่วนบุคคล หรือ บริษัทอยู่ระหว่างการตรวจสอบความถูกต้องของข้อมูลส่วนบุคคล"}
 
                                 </span></li>
                                 <li><span className="w-10 table-cell">13.7</span><span className="table-cell">
 
-                                    {locale === "en" ? "Deletion (right to be forgotten) : You may have the right to request that Company delete or de-identify Personal Data which Company collects, uses or discloses about you, unless Company is not obligated to do so, or if Company needs to retain such Personal Data in order to comply with a legal obligation or to establish, exercise, or defend legal claims." : "สิทธิในการขอให้ลบ หรือทำลายข้อมูลส่วนบุคคล ท่านอาจมีสิทธิขอให้บริษัทลบ ทำลายข้อมูลส่วนบุคคล (ที่บริษัทได้เก็บรวบรวม ใช้ หรือเปิดเผย) เหรือทำให้เป็นข้อมูลที่ไม่สามารถระบุตัวบุคคลได้ เว้นแต่บริษัทจะมีเหตุอันชอบธรรมด้วยกฎหมายในการปฏิเสธคำขอของท่านหรือบริษัทจำเป็นต้องเก็บรวบรวมข้อมูลส่วนบุคคลดังกล่าว เพื่อปฏิบัติตามหน้าที่ตามกฎหมาย หรือเพื่อที่จะก่อตั้ง ดำเนินการ หรือปกป้องสิทธิในการดำเนินคดีตามกฎหมาย"}
+                                    {locale === "en" ? "Deletion (\'right to be forgotten\'): You may have the right to request that Company delete, destroy or de-identify Personal Data which Company collects, uses or discloses about you, unless Company is not obligated to do so, or if Company needs to retain such Personal Data in order to comply with a legal obligation or to establish, exercise, or defend legal claims." : "สิทธิในการขอให้ลบ หรือทำลายข้อมูลส่วนบุคคล ท่านอาจมีสิทธิขอให้บริษัทลบ ทำลายข้อมูลส่วนบุคคล (ที่บริษัทได้เก็บรวบรวม ใช้ หรือเปิดเผย) หรือทำให้เป็นข้อมูลที่ไม่สามารถระบุตัวบุคคลได้ เว้นแต่บริษัทจะมีเหตุอันชอบธรรมด้วยกฎหมายในการปฏิเสธคำขอของท่าน หรือบริษัทจำเป็นต้องเก็บรวบรวมข้อมูลส่วนบุคคลดังกล่าว เพื่อปฏิบัติตามหน้าที่ตามกฎหมาย หรือเพื่อที่จะก่อตั้ง ดำเนินการ หรือปกป้องสิทธิในการดำเนินคดีตามกฎหมาย"}
 
 
                                 </span></li>
                                 <li><span className="w-10 table-cell">13.8</span><span className="table-cell">
 
-                                    {locale === "en" ? "File a complaint : You have the right to file a complaint with the Personal Data Protection Committee, if you believe that there is violation of the PDPA." : " สิทธิในการร้องเรียนต่อคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล ท่านมีสิทธิที่จะยื่นคำร้องต่อสำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล ในกรณีที่ท่านมีเหตุอันควรเชื่อได้ว่ามีการละเมิดข้อกำหนดตาม PDPA"}
+                                    {locale === "en" ? "File a complaint: You have the right to file a complaint with the Personal Data Protection Committee, if you believe that there is violation of the PDPA." : "สิทธิในการร้องเรียนต่อคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล ท่านมีสิทธิที่จะยื่นคำร้องต่อสำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล ในกรณีที่ท่านมีเหตุอันควรเชื่อได้ว่ามีการละเมิดข้อกำหนดตาม PDPA"}
 
                                 </span></li>
 
@@ -831,22 +838,22 @@ const Privacy = () => {
 
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
 
-                                {locale === "en" ? "You may exercise these rights by change your privacy preference, unsubscribe, or contact Company or Data Protection Officer as detailed in Clause 17 below." : "  ท่านอาจใช้สิทธิดังกล่าวข้างต้นโดยเปลี่ยนการตั้งค่าความเป็นส่วนตัว ยกเลิกการสมัคร หรือติดต่อบริษัท หรือเจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคลตามรายละเอียดในข้อ 17"}
+                                {locale === "en" ? "You may exercise these rights by change your privacy preference, unsubscribe, or contact Company or Data Protection Officer as detailed in Clause 17 below." : "ท่านอาจใช้สิทธิดังกล่าวข้างต้นโดยเปลี่ยนการตั้งค่าความเป็นส่วนตัว ยกเลิกการสมัคร หรือติดต่อบริษัท หรือเจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคลตามรายละเอียดในข้อ 17"}
                             </p>
 
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
 
 
-                                {locale === "en" ? "Your request to delete or anonymize the Personal Data, or request to restrict or objection to the processing of the Personal Data could mean that Company is unable to perform its obligations under an existing contract with you, unable to offer you products or services and/or acts on your request." : " คำขอลบหรือปกปิดข้อมูลส่วนบุคคลของท่าน หรือร้องขอให้จำกัดหรือคัดค้านการประมวลผลข้อมูลส่วนบุคคล อาจส่งผลให้บริษัท ไม่สามารถปฏิบัติหน้าที่ตามสัญญาที่มีอยู่ ไม่สามารถจำหน่ายสินค้าหรือให้บริการ และ/หรือดำเนินการตามคำขอของท่านได้"}
+                                {locale === "en" ? "Your request to delete or anonymize the Personal Data, or request to restrict or objection to the processing of the Personal Data could mean that Company is unable to perform its obligations under an existing contract with you, unable to offer you products or services and/or acts on your request." : "คำขอลบหรือปกปิดข้อมูลส่วนบุคคลของท่าน หรือร้องขอให้จำกัดหรือคัดค้านการประมวลผลข้อมูลส่วนบุคคล อาจส่งผลให้บริษัท ไม่สามารถปฏิบัติหน้าที่ตามสัญญาที่มีอยู่ ไม่สามารถจำหน่ายสินค้าหรือให้บริการ และ/หรือดำเนินการตามคำขอของท่านได้"}
                             </p>
 
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
-                                {locale === "en" ? "In the event that your withdrawal of consent will affect you in any manner, Company or the Data Protection Office will inform you, as a case maybe, of the consequences of such withdrawal of consent accordingly." : "  หากการเพิกถอนความยินยอมของท่านมีผลกระทบต่อท่านในทางใดก็ตาม บริษัทหรือเจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคลจะแจ้งให้ท่านทราบถึงผลกระทบของการเพิกถอนความยินยอมดังกล่าว"}
+                                {locale === "en" ? "In the event that your withdrawal of consent will affect you in any manner, Company or the Data Protection Officer will inform you, as a case maybe, of the consequences of such withdrawal of consent accordingly." : "หากการเพิกถอนความยินยอมของท่านมีผลกระทบต่อท่านในทางใดก็ตาม บริษัทหรือเจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคลจะแจ้งให้ท่านทราบถึงผลกระทบของการเพิกถอนความยินยอมดังกล่าว"}
 
                             </p>
 
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base text-justify mb-2 ml-4">
-                                {locale === "en" ? "For your privacy and security, Company may refuse to comply with the request if: \n(a)	The person submitting the request does not have evidence to verify that he/she is the data subject or does not have the authority to submit such request; \n (b)	The request is not reasonable such as the person submitting the request does not have the rights under the PDPA or does not have Personal Data in Company's possession;\n (c)	The request is excessive or vexatious such as the request unreasonably repeats a previous request from the same person; or\n (d)	Company has compelling legitimate grounds to reject such request as required or permitted by the PDPA and/or any applicable laws. " : "เพื่อความปลอดภัยของท่าน บริษัทอาจปฏิเสธที่จะปฏิบัติตามคำขอหาก \n(ก) บุคคลที่ส่งคำขอไม่มีหลักฐานยืนยันว่าตนเป็นเจ้าของข้อมูลหรือไม่มีอำนาจในการส่งคำขอดังกล่าว\n(ข) คำขอนั้นไม่สมเหตุสมผล เช่น บุคคลที่ส่งคำขอไม่มีสิทธิภายใต้ PDPA หรือไม่มีข้อมูลส่วนบุคคลที่บริษัทครอบครอง\n(ค) คำขอนั้นเป็นการก่อการรบกวน เช่น คำขอซ้ำกับคำขอก่อนหน้าจากบุคคลเดียวกันโดยไม่มีเหตุผล\n(ง) บริษัทมีเหตุผลที่ถูกต้องตามกฎหมายที่จะปฏิเสธคำขอดังกล่าวตามที่ PDPA และ/หรือกฎหมายที่บังคับใช้ใดๆ กำหนดหรืออนุญาต"}
+                                {locale === "en" ? "For your privacy and security, Company may refuse to comply with the request if:\n(a)	the person submitting the request does not have evidence to verify that he/she is the data subject or does not have the authority to submit such request;\n(b)	the request is not reasonable such as the person submitting the request does not have the rights under the PDPA or does not have Personal Data in Company’s possession;\n(c)	the request is excessive or vexatious such as the request unreasonably repeats a previous request from the same person; or\n(d)	Company has compelling legitimate grounds to reject such request as required or permitted by the PDPA and/or any applicable laws." : "เพื่อความเป็นส่วนตัวและความปลอดภัยของท่าน บริษัทอาจปฏิเสธที่จะปฏิบัติตามคำขอหาก:\n(ก)	ผู้ที่ยื่นคำขอไม่มีหลักฐานเพียงพอที่จะยืนยันได้ว่าผู้ยื่นคำขอเป็นเจ้าของข้อมูลส่วนบุคคล หรือไม่มีสิทธิที่จะยื่นคำขอดังกล่าว\n(ข)	คำขอดังกล่าวไม่สมเหตุสมผล เช่น ผู้ที่ยื่นคำขอไม่มีสิทธิตาม PDPA หรือบริษัทไม่ได้จัดเก็บข้อมูลส่วนบุคคลของผู้ยื่นคำขอ\n(ค)	เป็นคำขอที่มากเกินสมควร เช่น บริษัทได้รับคำขอจากบุคคลเดียวกันเป็นจำนวนมาก หรือ\n(ง)	บริษัทมีเหตุผลที่ถูกต้องตามกฎหมายที่จะปฏิเสธคำขอดังกล่าวตามที่ PDPA และ/หรือกฎหมายที่บังคับใช้ใดๆ กำหนดหรืออนุญาต"}
                             </p>
                         </section>
 
@@ -862,17 +869,17 @@ const Privacy = () => {
                             </p>
                             <ul className="ml-5 list-outside font-light text-sm sm:text-base  mb-2">
                                 <li> <span className="w-10 table-cell">14.1</span><span className="table-cell">
-                                    {locale === "en" ? "The Personal Data that has been disclosed to the public at the time you disclose such Personal Data to the Company or that is publicly disclosed which is not the fault of the Company or its group companies" : "ข้อมูลที่เป็นความลับนั้น ได้ถูกเปิดเผยต่อสาธารณะแล้วตั้งแต่เวลาที่ท่านได้เปิดเผยข้อมูลให้บริษัท หรือถูกเปิดเผยต่อสาธารณะโดยมิใช่ความผิดของบริษัท"}
+                                    {locale === "en" ? "The Personal Data that has been disclosed to the public at the time you disclose such Personal Data to the Company or that is publicly disclosed which is not the fault of the Company or its group companies;" : "ข้อมูลส่วนบุคคลนั้น ได้ถูกเปิดเผยต่อสาธารณะแล้วตั้งแต่เวลาที่ท่านได้เปิดเผยข้อมูลให้บริษัท หรือถูกเปิดเผยต่อสาธารณะโดยมิใช่ความผิดของบริษัท"}
                                 </span></li>
 
                                 <li> <span className="w-10 table-cell">14.2</span><span className="table-cell">
 
-                                    {locale === "en" ? "The Personal Data has been disclosed in accordance with your consent or permission by any other means or" : "การเปิดเผยข้อมูลโดยได้รับความยินยอมจากท่านไม่ว่าเป็นลายลักษณ์อักษร หรือการอนุญาตโดยวิธีการอื่นใด"}
+                                    {locale === "en" ? "The Personal Data has been disclosed in accordance with your consent or permission by any other means; or" : "การเปิดเผยข้อมูลโดยได้รับความยินยอมจากท่านไม่ว่าเป็นลายลักษณ์อักษร หรือการอนุญาตโดยวิธีการอื่นใด หรือ"}
                                 </span></li>
 
                                 <li> <span className="w-10 table-cell">14.3</span><span className="table-cell">
 
-                                    {locale === "en" ? "The Personal Data has been disclosed as it is necessary or required by laws, order, rules, regulations, court orders, or governmental agency, or other necessities. " : " การเปิดเผยข้อมูลตามความจำเป็น เนื่องจากกระทำตามกฎหมาย คำสั่ง กฎ ข้อบังคับ คำสั่งศาล คำพิพากษา หรือหน่วยงานของรัฐ หรือตามความจำเป็นอื่นใด "}
+                                    {locale === "en" ? "The Personal Data has been disclosed as it is necessary or required by laws, order, rules, regulations, court orders, or governmental agency, or other necessities." : "การเปิดเผยข้อมูลตามความจำเป็น เนื่องจากกระทำตามกฎหมาย คำสั่ง กฎ ข้อบังคับ คำสั่งศาล คำพิพากษา หรือหน่วยงานของรัฐ หรือตามความจำเป็นอื่นใด"}
 
                                 </span></li>
                             </ul>
@@ -895,7 +902,7 @@ const Privacy = () => {
                                 {locale === "en" ? "16. Miscellaneous" : " 16. เบ็ดเตล็ด "}
                             </h1>
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
-                                {locale === "en" ? "The Privacy Notice and Privacy Policy of the Company shall be governed and interpreted under PDPA and the applicable law of Thailand. This Privacy Notice and Privacy Policy has been made in both Thai and English. In case there is any controversy, the Thai version shall prevail." : "นโยบายความเป็นส่วนตัวและนโยบายคุ้มครองข้อมูลส่วนบุคคลอยู่ภายใต้และจะถูกตีความตาม PDPA และกฎหมายของประเทศไทย นโยบายความเป็นส่วนตัวและนโยบายคุ้มครองข้อมูลส่วนบุคคลนี้จัดทำขึ้นเป็นภาษาไทยและภาษาอังกฤษ ในกรณีที่มีความไม่สอดคล้องกันระหว่างฉบับภาษาไทยและภาษาอังกฤษ ให้ถือเอาฉบับภาษาไทยเป็นหลัก"}
+                                {locale === "en" ? "The Privacy Notice and Privacy Policy of the Company shall be governed and interpreted under PDPA and the applicable law of Thailand. This Privacy Notice and Privacy Policy have been made in both Thai and English. In case there is any controversy, the Thai version shall prevail." : "นโยบายความเป็นส่วนตัวและนโยบายคุ้มครองข้อมูลส่วนบุคคลอยู่ภายใต้และจะถูกตีความตาม PDPA และกฎหมายของประเทศไทย นโยบายความเป็นส่วนตัวฉบับนี้ และนโยบายคุ้มครองข้อมูลส่วนบุคคล จัดทำขึ้นเป็นภาษาไทยและภาษาอังกฤษ ในกรณีที่มีความไม่สอดคล้องกันระหว่างฉบับภาษาไทยและภาษาอังกฤษ ให้ถือเอาฉบับภาษาไทยเป็นหลัก"}
                             </p>
                         </section>
 
@@ -904,7 +911,7 @@ const Privacy = () => {
                                 {locale === "en" ? "17. Contact Us" : " 17. ช่องทางการติดต่อ  "}
                             </h1>
                             <p className="break-words whitespace-pre-line font-light text-sm sm:text-base indent-6 text-justify mb-2">
-                                {locale === "en" ? "Regarding all queries or awareness with respect to the Personal Data arising from this Privacy Notice, or the activities of Company, including to the exercise of any right as set out in this Privacy Notice, please contact Data Protection Officer of Company at the below address" : "            หากท่านมีความประสงค์ที่จะใช้สิทธิเกี่ยวกับข้อมูลส่วนบุคคลของท่าน หรือมีข้อสงสัยเกี่ยวกับนโยบายความเป็นส่วนตัวฉบับนี้ สามารถติดต่อได้ที่"}
+                                {locale === "en" ? "Regarding all queries or awareness with respect to the Personal Data arising from this Privacy Notice, or the activities of Company, including to the exercise of any right as set out in this Privacy Notice, please contact Data Protection Officer of Company at the below address" : "หากท่านมีข้อสงสัยหรือข้อกังวลเกี่ยวกับข้อมูลส่วนบุคคล อันเนื่องมาจากนโยบายความเป็นส่วนตัวฉบับนี้ หรือกิจกรรมใดๆ ของบริษัท รวมถึงการที่ท่านจะใช้สิทธิใดๆ ตามที่กำหนดในนโยบายความเป็นส่วนตัวฉบับนี้ โปรดติดต่อตามที่อยู่ด้านล่าง:"}
                             </p>
 
                             <ul className="ml-5 list-outside font-light text-sm sm:text-base  mb-2">
@@ -935,7 +942,7 @@ const Privacy = () => {
                                     </span></li>
                                 <li className="w-full flex justify-end"> <span className="italic w-full text-right">
 
-                                    {locale === "en" ? "Last edited on 23 June 2022" : "    ปรับปรุงล่าสุด ณ วันที่ 23 มิถุนายน 2565"}
+                                    {locale === "en" ? "Last edited on 29 June 2022" : "    ปรับปรุงล่าสุด ณ วันที่ 29 มิถุนายน 2565"}
 
 
                                 </span></li>
