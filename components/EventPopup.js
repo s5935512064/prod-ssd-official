@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { Fragment, useState, useEffect } from "react";
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
+
 const EventPopup = ({ opened }) => {
 
     let [isOpen, setIsOpen] = useState(true)
@@ -29,7 +30,7 @@ const EventPopup = ({ opened }) => {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <div className="fixed inset-0 bg-[#010F2A] bg-opacity-25" />
+                        <div className="fixed inset-0 bg-black bg-opacity-50" />
                     </Transition.Child>
 
                     <div className="fixed inset-0 overflow-y-auto">
@@ -49,7 +50,7 @@ const EventPopup = ({ opened }) => {
                                 <Dialog.Panel className="transform  p-4 text-left align-middle transition-all max-w-7xl w-full bg-[url('/assets/R10BG.svg')] bg-no-repeat bg-cover bg-center h-[55vh] sm:h-[65vh] lg:h-[80vh] relative">
                                     <div className=" absolute -top-7 -right-1">
                                         <button onClick={closeModal} className="z-50 border-none outline-none">
-                                            <svg className="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18">
+                                            <svg className="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18">
                                                 <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
                                             </svg>
                                         </button>
@@ -61,17 +62,18 @@ const EventPopup = ({ opened }) => {
 
                                         <div className="w-full h-full relative grid grid-cols-1 grid-rows-3 lg:grid-cols-2 lg:grid-rows-1 gap-3 mt-4 lg:mt-0">
 
-                                            <div className="bg-[url('/assets/R10.png')] bg-no-repeat bg-contain lg:bg-cover bg-center flex items-center justify-center h-full relative row-span-2 ">
+                                            <div className="bg-[url('/assets/R10.png')] bg-no-repeat bg-contain  bg-center flex items-center justify-center h-full relative row-span-2 ">
                                             </div>
 
-                                            <div className="h-full w-full relative justify-center grid grid-cols-1 justify-items-center  -mt-5   lg:grid-rows-2 items-end gap-3 lg:-translate-x-8 ">
+                                            <div className="h-full w-full relative justify-center grid grid-cols-1 justify-items-center   lg:grid-rows-2 items-end gap-3 lg:-translate-x-8 ">
 
-                                                <div className="w-full max-h-[250px] h-full relative bg-[url('/assets/R10Sign.png')] bg-no-repeat bg-center bg-contain hidden lg:block  translate-y-16 ">
+                                                <div className="w-full max-h-[250px] h-full relative bg-[url('/assets/R10Sign.png')] bg-no-repeat bg-center bg-contain hidden lg:block  translate-y-8 xxl:translate-y-16 ">
                                                 </div>
 
-                                                <div className="w-full h-full relative  ">
+                                                <div className="w-full h-full relative scale-75 hidden lg:block">
                                                     <Image
-                                                        src="/assets/R10Text.png"
+                                                        priority
+                                                        src="/assets/R10Text-desktop.png"
                                                         alt="text"
                                                         layout="fill"
                                                         objectFit="contain"
@@ -79,6 +81,19 @@ const EventPopup = ({ opened }) => {
 
                                                     />
                                                 </div>
+
+                                                <div className="w-full h-full relative scale-90 -translate-y-4 lg:hidden">
+                                                    <Image
+                                                        priority
+                                                        src="/assets/R10Text-m.png"
+                                                        alt="text"
+                                                        layout="fill"
+                                                        objectFit="contain"
+                                                        objectPosition={"center"}
+
+                                                    />
+                                                </div>
+
                                             </div>
 
 

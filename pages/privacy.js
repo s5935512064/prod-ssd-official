@@ -16,7 +16,7 @@ const Privacy = () => {
             <Head>
                 <title>นโยบายความเป็นส่วนตัว - บริษัท สยามสินธร จำกัด</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <link rel="icon" href="/assets/logo-TREE.svg" />
+
             </Head>
 
             < Navbar />

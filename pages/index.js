@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>บริษัท สยามสินธร จำกัด</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="/assets/logo-TREE.svg" />
+
       </Head>
       <Navbar />
       <div className="h-screen w-full flex justify-center items-center relative">
