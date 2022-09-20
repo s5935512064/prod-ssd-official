@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" w-full bg-white px-4 md:px-10 xxl:px-0 flex justify-center py-10 items-center relative">
+      <div className=" w-full bg-white px-4 md:px-10 xxl:px-0 flex justify-center py-10 items-center relative overflow-hidden">
         <div className="absolute right-0 h-full w-1/2 bg-[#A08A58] translate-x-40">
         </div>
 
@@ -186,34 +186,6 @@ export default function Home() {
             </div>
 
           </div>
-
-
-          {/* <div className="w-full grid grid-cols-2 h-[500px]">
-            <div className="relative w-full h-full bg-[#A08A58] p-2 py-5">
-              <div className="relative w-full h-full translate-x-10 ">
-                <Image
-                  src="/assets/OfficeAT-Glasshouse-34.jpg"
-                  alt=""
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="top center"
-                  className=""
-                />
-              </div>
-
-            </div>
-
-            <div className="pl-24 flex flex-col justify-center gap-2">
-              <h1 className="text-3xl text-[#A08A58] font-medium uppercase">Glasshouse</h1>
-              <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque natus nam distinctio laborum iusto doloribus quia quam ipsam ut in.</p>
-
-             
-            </div>
-
-          </div> */}
-
-
-
 
         </div>
       </div>

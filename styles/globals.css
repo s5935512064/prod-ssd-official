@@ -193,3 +193,46 @@
 .swiper-rtl .swiper-button-prev:after {
   content: url("/assets/next1.svg") !important;
 }
+
+#jobcard:hover img {
+  --tw-scale-x: 1.15;
+  --tw-scale-y: 1.15;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.load-more:hover svg {
+  animation: spin 1s linear infinite;
+}
+
+#social svg:hover circle {
+  fill: black;
+}
+
+#social svg:hover #Path_548021 {
+  fill: black;
+}
+
+#social svg:hover ellipse {
+  fill: black;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

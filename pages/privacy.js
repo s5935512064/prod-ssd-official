@@ -3,12 +3,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, animateScroll as scroll, scroller } from 'react-scroll'
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Layout from "../components/Layout";
 
 const Privacy = () => {
     const router = useRouter();
     const { locale } = router;
     return (
-        <>
+        <Layout>
 
 
 
@@ -19,12 +20,12 @@ const Privacy = () => {
 
             </Head>
 
-            < Navbar />
+
 
             <div className="w-full h-full relative flex justify-center pt-28">
 
                 <div className="max-w-7xl w-full h-full px-5 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-3 relative">
-                    <div className="flex-col flex gap-2 md:sticky md:top-20  h-fit  ">
+                    <div className="flex-col flex gap-2 md:sticky md:top-20  h-fit mb-10 ">
                         <ul className="gap-1 flex flex-col">
                             <Link
                                 activeClass="active"
@@ -998,7 +999,7 @@ const Privacy = () => {
                 </div>
 
             </div>
-        </>
+        </Layout>
     );
 }
 

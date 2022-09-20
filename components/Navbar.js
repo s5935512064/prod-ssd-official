@@ -30,6 +30,13 @@ const container = {
     }
 }
 
+const menu = [
+    { id: 1, name: "company", nameTH: "", href: "/" },
+    { id: 2, name: "business", nameTH: "", href: "/business" },
+    { id: 3, name: "contact", nameTH: "", href: "/contact" },
+    { id: 4, name: "career", nameTH: "", href: "/career" },
+]
+
 
 const Navbar = () => {
 
@@ -109,31 +116,40 @@ const Navbar = () => {
 
 
                     <div className="absolute left-0  h-14">
-                        <div className="w-36 h-full relative" >
-                            <Image
-                                src="/assets/ssd-logo.png"
-                                alt="logo"
-                                layout="fill"
-                                objectFit="contain"
-                                className=" cursor-pointer"
-                            />
+                        <Link href={"/"}>
 
-                        </div>
+                            <div className="w-36 h-full relative" >
+                                <Image
+                                    src="/assets/ssd-logo.png"
+                                    alt="logo"
+                                    layout="fill"
+                                    objectFit="contain"
+                                    className=" cursor-pointer"
+                                />
+
+                            </div>
+                        </Link>
                     </div>
 
-                    <div>
-                        <ul className="inline-flex gap-4 text-sm uppercase text-gray-400  tracking-wide items-center">
-                            <li className="text-[#A08A58]  border border-[#A08A58] rounded-3xl py-1 px-3 hover:bg-[#A08A58] hover:text-white duration-300 cursor-pointer w-24 text-center">Company</li>
+                    <div className="hidden md:block">
+                        <ul className="inline-flex gap-4 items-center">
+
+                            {menu.map((item, index) => (
+                                <Link key={index} href={item.href}>
+                                    <li className={classNames(router.pathname === item.href ? "text-[#A08A58]  border border-[#A08A58] " : "text-gray-400  ", "py-1 px-3 hover:bg-[#A08A58] hover:text-white text-sm  duration-300 cursor-pointer w-24 text-center uppercase rounded-3xl tracking-wide ")}>{item.name}</li>
+                                </Link>
+                            ))}
+                            {/* <li className=" ">Company</li>
                             <li className="w-24 text-center rounded-3xl py-1 px-3 hover:bg-[#A08A58] hover:text-white duration-300 cursor-pointer">Bussiness</li>
                             <li className="w-24 text-center rounded-3xl py-1 px-3 hover:bg-[#A08A58] hover:text-white duration-300 cursor-pointer">Contact</li>
-                            <li className="w-24 text-center rounded-3xl py-1 px-3 hover:bg-[#A08A58] hover:text-white duration-300 cursor-pointer">Career</li>
+                            <li className="w-24 text-center rounded-3xl py-1 px-3 hover:bg-[#A08A58] hover:text-white duration-300 cursor-pointer">Career</li> */}
 
                         </ul>
                     </div>
 
                     <div className="absolute right-0 divide-x-2 inline-flex gap-2 text-sm text-gray-700">
-                        <p className="text-gray-300">TH</p>
-                        <p className="pl-2  font-medium">EN</p>
+                        <p className="text-gray-300 text-xs">TH</p>
+                        <p className="pl-2  font-medium text-[#A08A58]">EN</p>
 
                     </div>
                     {/* <Link href={locale === "en" ? "/en" : "/"}>
