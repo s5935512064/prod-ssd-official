@@ -1,7 +1,19 @@
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar"
+import Timeline from "../components/Timeline"
+import Footer from "../components/Footer"
+
+
+const Archivement = dynamic(() => import("../components/Archivement"), {
+  ssr: false,
+});
+
+const News = dynamic(() => import("../components/News"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -12,8 +24,17 @@ export default function Home() {
 
       </Head>
       <Navbar />
-      <div className="h-screen w-full flex justify-center items-center relative">
-        <div className="p-10 flex justify-center flex-col items-center">
+
+      <div className="h-screen w-full flex justify-center items-center relative bg-[url('/assets/bannerslide.jpg.webp')] bg-cover bg-top bg-no-repeat bg-black/40 bg-blend-multiply    ">
+        <div className="w-full h-full max-w-7xl flex items-center justify-center text-center">
+          <div className="space-y-2">
+            <p className="text-white text-sm drop-shadow-md">WELCOMME TO SIAM SINDHORN</p>
+            <p className="text-7xl font-semibold text-white uppercase drop-shadow-md">Business <span className="text-[#bda368]">leadership</span> </p>
+            <p className="text-white drop-shadow-md text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dolor.</p>
+          </div>
+
+        </div>
+        {/* <div className="p-10 flex justify-center flex-col items-center">
           <h1 className="text-4xl font-bold uppercase mb-10 text-center">Under Construction</h1>
 
 
@@ -64,8 +85,156 @@ export default function Home() {
           <p className="md:text-xl font-light  max-w-lg mt-2 w-full text-center">
             It is okay, we are excited too!
           </p>
+        </div> */}
+      </div>
+
+      <div className=" items-center w-full bg-white px-4 md:px-10 xxl:px-0 flex justify-center py-10">
+
+        <div className="max-w-7xl w-full h-full flex flex-col justify-center items-center">
+
+
+          <p className="text-4xl  uppercase text-[#A08A58]  w-full">SIAM SINDHORN</p>
+          <p className="mb-8 w-full text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, unde?</p>
+
+          <Timeline />
+
+        </div>
+
+      </div>
+
+      <div className=" w-full bg-[#F7F7F7] px-4 md:px-10 xxl:px-0 flex justify-center items-center py-10 relative">
+        {/* <div className="absolute left-0 h-full w-1/2 bg-[#A08A58] -translate-x-40">
+        </div> */}
+        <div className="max-w-7xl w-full h-full ">
+
+          <p className="text-4xl  uppercase text-[#A08A58]  w-full">ARCHIVEMENT
+          </p>
+          <p className="mb-4 w-full text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, unde?</p>
+
+
+          <Archivement />
         </div>
       </div>
+
+      <div className=" w-full bg-white px-4 md:px-10 xxl:px-0 flex justify-center py-10 items-center relative">
+        <div className="absolute right-0 h-full w-1/2 bg-[#A08A58] translate-x-40">
+        </div>
+
+        <div className="max-w-7xl w-full h-full z-10">
+
+
+          {/* <p className="mb-4 w-full text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, unde?</p> */}
+          <div className="w-full grid grid-cols-2 h-[500px]">
+            <div className="relative w-full h-full flex flex-col gap-4 text-center items-center justify-center p-5">
+              <p className="text-4xl  uppercase text-[#A08A58]  w-full">Our Bussiness
+              </p>
+              <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum, magnam nam cum at optio non rem quasi, similique omnis veritatis ratione voluptatem quam magni sit ut, itaque aliquam perspiciatis.</p>
+
+              <button className="px-6 text-white py-2 bg-[#A08A58] w-fit text-sm rounded-2xl shadow ">EXPLORE MORE</button>
+
+
+              {/* <div className="flex flex-wrap gap-4 justify-center">
+
+                <div className="w-32 h-32 bg-white shadow-sm flex flex-col items-center justify-center">
+                  <p className="text-5xl  text-[#A08A58] ">5</p>
+                  <p className="uppercase text-gray-400 text-sm">residence</p>
+
+                </div>
+
+                <div className="w-32 h-32 bg-white shadow-sm  flex flex-col items-center justify-center">
+                  <p className="text-5xl  text-[#A08A58] ">3</p>
+                  <p className="uppercase text-gray-400 text-sm">hotel</p>
+
+                </div>
+
+                <div className="w-32 h-32 bg-white shadow-sm  flex flex-col items-center justify-center">
+                  <p className="text-5xl  text-[#A08A58] ">2</p>
+                  <p className="uppercase text-gray-400 text-sm">office</p>
+
+                </div>
+
+                <div className="w-32 h-32 bg-white shadow-sm  flex flex-col items-center justify-center">
+                  <p className="text-5xl  text-[#A08A58] ">3</p>
+                  <p className="uppercase text-gray-400 text-sm">commercial</p>
+
+                </div>
+
+                <div className="w-32 h-32 bg-white shadow-sm  flex flex-col items-center justify-center">
+                  <p className="text-5xl  text-[#A08A58] ">4</p>
+                  <p className="uppercase text-gray-400 text-sm">F&B</p>
+
+                </div>
+                <div className="w-32 h-32 bg-white shadow-sm  flex flex-col items-center justify-center">
+                  <p className="text-5xl  text-[#A08A58] ">3</p>
+                  <p className="uppercase text-gray-400 text-sm">OE</p>
+
+                </div>
+
+
+              </div> */}
+
+
+            </div>
+
+            <div className="flex flex-col justify-center gap-2 bg-[#f7f7f7] items-center">
+              {/* <h1 className="text-3xl text-[#A08A58] font-medium uppercase">Glasshouse</h1>
+              <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque natus nam distinctio laborum iusto doloribus quia quam ipsam ut in.</p> */}
+
+              <p>All logo</p>
+
+
+            </div>
+
+          </div>
+
+
+          {/* <div className="w-full grid grid-cols-2 h-[500px]">
+            <div className="relative w-full h-full bg-[#A08A58] p-2 py-5">
+              <div className="relative w-full h-full translate-x-10 ">
+                <Image
+                  src="/assets/OfficeAT-Glasshouse-34.jpg"
+                  alt=""
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="top center"
+                  className=""
+                />
+              </div>
+
+            </div>
+
+            <div className="pl-24 flex flex-col justify-center gap-2">
+              <h1 className="text-3xl text-[#A08A58] font-medium uppercase">Glasshouse</h1>
+              <p className="text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque natus nam distinctio laborum iusto doloribus quia quam ipsam ut in.</p>
+
+             
+            </div>
+
+          </div> */}
+
+
+
+
+        </div>
+      </div>
+
+      <div className=" w-full bg-[#F7F7F7] px-4 md:px-10 xxl:px-0 flex justify-center items-center py-10">
+        <div className="max-w-7xl w-full h-full">
+
+          <p className="text-4xl  uppercase text-[#A08A58]  w-full">NEWS
+          </p>
+          <p className="mb-4 w-full text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, unde?</p>
+
+
+          <News />
+        </div>
+      </div>
+
+      <Footer />
+
+
+
+
     </>
   )
 }

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const EventPopup = ({ opened }) => {
 
-    let [isOpen, setIsOpen] = useState(false)
+    let [isOpen, setIsOpen] = useState(opened)
 
     function closeModal() {
         setIsOpen(false)

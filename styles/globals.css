@@ -38,3 +38,158 @@
     border-image: url("/assets/R10Border.svg") 10 stretch;
   }
 }
+
+#navbar {
+  -webkit-transition: background-image 1s ease-out;
+  -moz-transition: background-image 1s ease-out;
+  -o-transition: background-image 1s ease-out;
+  transition: background-image 1s ease-out;
+}
+
+.menu {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+}
+
+.menu-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1002;
+}
+
+.menu-icon {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 1px;
+}
+
+/* ------------- */
+.menu-line {
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.25s ease-in-out;
+}
+.menu-line-2 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.menu-line-3 {
+  bottom: 0;
+}
+.menu.open .menu-line-1 {
+  background-color: #000;
+  transform: translateY(7px) translateY(-50%) rotate(-45deg);
+}
+.menu.open .menu-line-2 {
+  background-color: #000;
+  opacity: 0;
+}
+.menu.open .menu-line-3 {
+  background-color: #000;
+  transform: translateY(-7px) translateY(50%) rotate(45deg);
+}
+
+/* ------------- */
+.menu-circle {
+  background-color: #010f2a;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(2);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+.menu:hover .menu-circle {
+  transform: scale(1.5);
+}
+.menu.open .menu-circle {
+  transform: scale(100);
+}
+
+/* ------------- */
+.menu-overlay {
+  background-color: #010f2a;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+}
+
+/* ------------- */
+.info {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay-info {
+  text-align: center;
+  color: #fff;
+}
+
+.vertical-timeline::before {
+  width: 1px !important;
+  background: #000 !important;
+}
+
+.vertical-timeline-element-date {
+  color: #000 !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 30px !important;
+  right: auto;
+  opacity: 0.75;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: url("/assets/previous1.svg") !important;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 30px !important;
+  left: auto;
+  opacity: 0.75;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: url("/assets/next1.svg") !important;
+}
