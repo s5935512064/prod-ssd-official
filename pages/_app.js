@@ -178,7 +178,7 @@ function MyApp({ Component, pageProps }) {
   return (
 
     <>
-      <EventPopup opened={true} />
+      <EventPopup />
       <Component {...pageProps} />
       <Cookies />
     </>

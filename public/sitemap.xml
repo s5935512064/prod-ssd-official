@@ -1,41 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-<<<<<<< Updated upstream
     <loc>undefined</loc>
-    <lastmod>2022-07-27T04:38:33.023Z</lastmod>
-=======
-    <loc>undefined/business</loc>
-    <lastmod>2022-10-12T10:16:07.877Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>undefined/career</loc>
-    <lastmod>2022-10-12T10:16:07.877Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>undefined/contact</loc>
-    <lastmod>2022-10-12T10:16:07.877Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>undefined</loc>
-    <lastmod>2022-10-12T10:16:07.877Z</lastmod>
->>>>>>> Stashed changes
+    <lastmod>2022-10-12T10:25:01.920Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>undefined/privacy</loc>
-<<<<<<< Updated upstream
-    <lastmod>2022-07-27T04:38:33.023Z</lastmod>
-=======
-    <lastmod>2022-10-12T10:16:07.877Z</lastmod>
->>>>>>> Stashed changes
+    <lastmod>2022-10-12T10:25:01.920Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

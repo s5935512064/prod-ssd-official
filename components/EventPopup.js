@@ -5,11 +5,7 @@ import Image from 'next/image'
 
 const EventPopup = ({ opened }) => {
 
-<<<<<<< Updated upstream
-    let [isOpen, setIsOpen] = useState(false)
-=======
     let [isOpen, setIsOpen] = useState(true)
->>>>>>> Stashed changes
 
     function closeModal() {
         setIsOpen(false)
@@ -80,7 +76,7 @@ const EventPopup = ({ opened }) => {
 
                                                 <div className="w-full h-full relative scale-90 hidden lg:block translate-y-44 ">
                                                     <Image
-                                                        priority
+                                                        priority={true}
                                                         src="/assets/king2565/TEXT_SSD.png"
                                                         alt="text"
                                                         layout="fill"
@@ -92,7 +88,7 @@ const EventPopup = ({ opened }) => {
 
                                                 <div className="w-full h-full relative scale-110 -translate-y-6 lg:hidden">
                                                     <Image
-                                                        priority
+                                                        priority={true}
                                                         src="/assets/king2565/TEXT_SSD.png"
                                                         alt="text"
                                                         layout="fill"
