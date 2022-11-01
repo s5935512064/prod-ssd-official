@@ -205,11 +205,16 @@ export default function Home() {
       <Head>
         <title>บริษัท สยามสินธร จำกัด</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="Description" content='siamsindhorn sindhorn village velaa kempinski tonson lumpini' />
+        <link rel="icon" href="/ssd-icon.svg" />
+
+
       </Head>
       <Navbar />
-      <div className="h-screen w-full flex justify-center items-center relative">
-        <div className="p-10 flex justify-center flex-col items-center">
-          <h1 className="text-4xl font-bold uppercase mb-10 text-center">Under Construction</h1>
+      <div className="h-screen w-full flex justify-center items-center relative bg-[url('/assets/background.webp')] bg-cover bg-center bg-no-repeat bg-black/70 bg-blend-multiply">
+
+        <div className="p-10 flex justify-center flex-col items-center gap-4">
+
 
 
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="300px" height="210px" viewBox="0 0 100 68" >
@@ -251,14 +256,21 @@ export default function Home() {
 
             </g>
           </svg>
+          <h1 className="text-4xl xl:text-5xl uppercase  text-center text-white mt-8">New Website Coming Soon</h1>
 
 
-          <p className="md:text-xl font-light  max-w-lg mt-10 text-center ">
+          {/* <div className="mt-10">
+            <p className=" max-w-xl mt-2 w-full text-center text-white">
+              <span className="uppercase">for inquiries: </span>
+              Call us on 	02-263-2500
+            </p>
+          </div> */}
+
+
+          <p className="md:text-xl font-light  max-w-xl text-center text-white">
             Please forgive the inconvenience.We are currently initializing our brand new site.
           </p>
-          <p className="md:text-xl font-light  max-w-lg mt-2 w-full text-center">
-            It is okay, we are excited too!
-          </p>
+
         </div>
       </div>
     </>
